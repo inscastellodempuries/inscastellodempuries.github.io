@@ -1,0 +1,220 @@
+/* Configurar la font de la web i el color del fons */
+body{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color: rgb(217, 238, 245);
+}
+/* Establir amplades*/
+.establiramplada1 {
+margin-left: 30px;
+margin-right: 30px;
+}
+
+
+/* --------------------------------------------------- MENU --------------------------------------------------- */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    margin-left: -48px;
+    margin-right: -20px;
+  }
+  
+  /* Links */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Menu de subnav */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Botó de subnav */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Color dels links en hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #521a09;
+  }
+  
+  /* Estilitzar el contigut subnav - posició absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #923917;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Estilitzar els links del subnav */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Fons gris en mode hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* Obrir el contenidor subnav quan estás per sobre del botó */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+
+/* --------------------------------------------------- IMATGE PRINCIPAL --------------------------------------------------- */
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* --------------------------------------------------- TAULA --------------------------------------------------- */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+/* Estilitzar encapçalament i informació */
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+/* Taula tipus zebra */
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-remove {
+  color: red;
+}
+
+
+/* --------------------------------------------------- PEU DE PAGINA --------------------------------------------------- */
+#main-footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  }
+  #main-footer p {
+  margin: 0;
+  }
+  
+  #main-footer a {
+  color: white;
+  }
+
+
+
+  #columnes{
+    column-count:2;
+    column-gap:20px;
+    list-style: none;
+
+ }
+
+
+/* --------------------------------------------------- POPUP DE INICIAR SESSIÓ --------------------------------------------------- */
+/* Botó per obrir el popup - fixat a baix de la web a la dreta*/
+.open-button {
+  background-color: #923917;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  top: 23px;
+  right: 28px;
+  width: 50;
+  border-radius: 50px;
+}
+
+/* Formulari - amagat per defecte */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 22px;
+  right: 27px;
+  z-index: 9;
+}
+
+/* Afegir estil al contenidor del formulari */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Amplada dels camps */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 85%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Quan els inputs estiguin mode d'enfoc fer algo */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Estil pels botons */
+.form-container .btn {
+  background-color: #923917;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+/* Fons al boto de tancat */
+.form-container .cancel {
+  background-color: gray;
+}
+
+/* Efectes de mantenir el cursor */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
